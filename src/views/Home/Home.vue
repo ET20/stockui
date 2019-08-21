@@ -1,7 +1,7 @@
 <template>
   <div id="HomeContainer" class="pageContainer">
     <div class="pageContentAbsolut">
-      Hola desde el inicio!
+      Hola soy kevin!
       <b-button @click="clickMe">Click Me</b-button>
     </div>
   </div>
