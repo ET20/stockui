@@ -2,7 +2,7 @@
   <div id="HomeContainer" class="pageContainer">
     <div class="pageContentAbsolut">
       Hola soy kevin!
-      <b-button @click="clickMe">Click Me</b-button>
+       <b-button @click="clickMe">boton</b-button>
     </div>
   </div>
 </template>
@@ -16,7 +16,8 @@ export default {
       this.$emit('toggleNav')
     },
     clickMe () {
-      this.$notification.open('Clicked!!')
+      this.$router.push('login')
+      //this.$notification.open('Clicked!!')
     }
   },
   created () {

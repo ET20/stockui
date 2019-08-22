@@ -6,7 +6,7 @@
         <!--<img id="imagenfondo" src="../src/assets/ninja.jpg">-->
         <router-link class to="/account" id="usuario">
           <img id="imagenperfil" src="../assets/logo.png" />
-          <h1>Walter Molina</h1>
+          <h1>kecin</h1>
           <h2>walter@tachuso.com</h2>
         </router-link>
       </div>
