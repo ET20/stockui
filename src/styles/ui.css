@@ -43,10 +43,35 @@ body {
 }
 
 #app {
-  background: #000;
+  background: chocolate;
   height: 100%;
+  width: 100%;
+
 }
 
+#columns {
+  background: gray;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+#caja1 {
+  background: red;
+  height: 60px;
+  width: 20%;
+ 
+  
+}
+#caja2 {
+  background: green;
+  height: 60px;
+  width: 20%;
+  
+  
+}
 #app #mainNav {
   position: fixed;
   top: 0;

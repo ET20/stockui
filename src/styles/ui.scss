@@ -42,8 +42,12 @@ body {
 }
 
 #app {
-  background: #000; //$appBackground;
+  background: red; //$appBackground;
   height: 100%;
+  background-color: aqua;
+  position: absolute;
+  color:red;
+
 
   #mainNav {
     position: fixed;
