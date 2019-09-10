@@ -3,10 +3,22 @@
   
 
   <div id="app">
-  <div class="columns">
-  <div class="caja0">2</div>
-  <div class="caja1">3</div>
-  <div class="caja2">4</div>
+  <div id= "barra" class="columns"> 
+  
+  <div id= "caja0" class="caja0"><template>
+    <section>
+        <b-button @click="clickMe">Click Me</b-button>
+    </section>
+
+
+</template></div>
+
+
+
+
+
+  <div id= "caja1" class="caja0">Titulo 2</div>
+  <div id= "caja2" class="caja0">Titulo 3</div>
 </div>
     <!--Contenedor principal donde cargan las páginas de la app-->
     <main>
@@ -24,3 +36,12 @@
 </style>
 
 
+<script>
+    export default {
+        methods: {
+            clickMe() {
+                this.$buefy.notification.open('Clicked!!')
+            }
+        }
+    }
+</script>

@@ -49,28 +49,43 @@ body {
 
 }
 
-#columns {
+#barra {
   background: gray;
-  height: 100%;
-  width: 100%;
+  height: 4rem;
+  width: 110%;
+  margin: 0;
+  
 
 }
 
-
+#caja0 {
+  background: blue;
+  height: 4rem;
+  width: 20%;
+  text-align: center;
+  color: white;
+  
+}
 
 #caja1 {
   background: red;
-  height: 60px;
+  height: 4rem;
   width: 20%;
- 
+  text-align: center;
+  color: white;
   
 }
 #caja2 {
   background: green;
-  height: 60px;
+  height: 4rem;
   width: 20%;
-  
-  
+  text-align: center;
+  color: white;
+}
+.caja0{
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #app #mainNav {
   position: fixed;
