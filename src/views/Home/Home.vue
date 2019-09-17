@@ -16,8 +16,8 @@ export default {
       this.$emit('toggleNav')
     },
     clickMe () {
-      this.$router.push('login')
-      //this.$notification.open('Clicked!!')
+      this.$router.push('home')
+      this.$notification.open('Clicked!!')
     }
   },
   created () {

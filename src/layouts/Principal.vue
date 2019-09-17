@@ -55,7 +55,7 @@
           <i class="mdi mdi-menu"></i>
         </button>
         <img id="logo" src="../assets/logo.png" />
-        <h1>Título 1</h1>
+        <h1>Título S</h1>
         <i class="chevron mdi mdi-chevron-right"></i>
         <h2>
           <i class="mdi mdi-user"></i>

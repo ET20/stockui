@@ -61,7 +61,7 @@ body {
 #caja0 {
   background: blue;
   height: 4rem;
-  width: 20%;
+  width: 70px;
   text-align: center;
   color: white;
   
@@ -70,18 +70,14 @@ body {
 #caja1 {
   background: red;
   height: 4rem;
-  width: 20%;
+  width: 70px;
   text-align: center;
   color: white;
-  
+  margin-left: 1290px;
+  position: absolute;
+  cursor: pointer;
 }
-#caja2 {
-  background: green;
-  height: 4rem;
-  width: 20%;
-  text-align: center;
-  color: white;
-}
+#caja1:hover {background-color: black}
 .caja0{
   display: flex;
     justify-content: center;

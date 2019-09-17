@@ -6,7 +6,9 @@
   <div id= "barra" class="columns"> 
   
   <div id= "caja0" class="caja0"><template>
+    
     <section>
+      
         <b-button @click="clickMe">Click Me</b-button>
     </section>
 
@@ -17,15 +19,35 @@
 
 
 
-  <div id= "caja1" class="caja0">Titulo 2</div>
-  <div id= "caja2" class="caja0">Titulo 3</div>
+  <div id= "caja1" class="caja0">
+    <!--<img id="lineas" src="img/lineas.png">-->
+    
+                <b-icon
+                icon="menu"
+                size="is-medium"
+                
+                >
+            </b-icon>
+    
+
+
+
+
+
+    
+  </div>
+  
 </div>
     <!--Contenedor principal donde cargan las páginas de la app-->
+    
+    
+
+    
     <main>
       <transition name="fade">
         <router-view></router-view>
       </transition>
-    </main>
+    </main>-->
   </div>
 </template>
 
@@ -45,3 +67,5 @@
         }
     }
 </script>
+-->
+
