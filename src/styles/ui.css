@@ -68,7 +68,7 @@ body {
 }
 
 #caja1 {
-  background: greenyellow;
+  background: #7F2A18;
   height: 3rem;
   width: 70px;
   text-align: center;
@@ -92,7 +92,8 @@ body {
     
 }
 #app #mainNav {
-  position: fixed;
+  position: absolute;
+  
   top: 0;
   bottom: 0;
   background: red;
@@ -258,7 +259,7 @@ body {
           box-sizing: border-box;
   background: none;
   border-bottom: 0.05rem solid rgba(0, 0, 0, 0.2);
-  background-color:green;
+  background-color:brown;
   color: black;
   z-index: 500;
   display: flex;

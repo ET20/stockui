@@ -4,7 +4,7 @@
       Hola soy kevin!
        <b-button @click="clickMe">boton</b-button>
     </div>-->
- <img id="logo" src="img/fondo.png" />
+ <img id="logo" src="img/fondo2.jpg" width="1500px" height="1000px" />
   </div>
 </template>
 
