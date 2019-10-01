@@ -1,53 +1,25 @@
 <template>
-  
-  
-
   <div id="app">
-  <div id= "barra" class="columns"> 
-  
-  <div id= "caja0" class="caja0"><template>
-    
-    <section>
+    <div id="barra" class="columns">
+      <div id="caja1" class="caja0">
+        <!--<img id="lineas" src="img/lineas.png">-->
+        <b-icon icon="menu" size="is-medium"></b-icon>
+      </div>
       
-        <b-button @click="clickMe">Click Me</b-button>
-    </section>
 
-
-</template></div>
-
-
-
-
-
-  <div id= "caja1" class="caja0">
-    <!--<img id="lineas" src="img/lineas.png">-->
-    
-                <b-icon
-                icon="menu"
-                size="is-medium"
-                
-                >
-            </b-icon>
-    
-
-
-
-
-
-    
-  </div>
-  
-</div>
+      <div id="caja0" class="caja0">
+        <section>
+          <b-button @click="clickMe">Clicask Me</b-button>
+        </section>
+      </div>
+    </div>
     <!--Contenedor principal donde cargan las páginas de la app-->
-    
-    
 
-    
     <main>
       <transition name="fade">
         <router-view></router-view>
       </transition>
-    </main>-->
+    </main>
   </div>
 </template>
 
@@ -57,15 +29,13 @@
 @import "../styles/ui.css";
 </style>
 
-
 <script>
-    export default {
-        methods: {
-            clickMe() {
-                this.$buefy.notification.open('Clicked!!')
-            }
-        }
+export default {
+  methods: {
+    clickMe() {
+      this.$buefy.notification.open("Clicked!!");
+      this.$router.push("home");
     }
+  }
+};
 </script>
--->
-

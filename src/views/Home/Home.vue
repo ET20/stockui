@@ -1,11 +1,13 @@
 <template>
   <div id="HomeContainer" class="pageContainer">
-    <div class="pageContentAbsolut">
+   <!--  <div class="pageContentAbsolut">
       Hola soy kevin!
        <b-button @click="clickMe">boton</b-button>
-    </div>
+    </div>-->
+ <img id="logo" src="img/fondo.png" />
   </div>
 </template>
+
 
 <script>
 export default {
@@ -15,10 +17,7 @@ export default {
     toggleNav: function () {
       this.$emit('toggleNav')
     },
-    clickMe () {
-      this.$router.push('home')
-      this.$notification.open('Clicked!!')
-    }
+    
   },
   created () {
     this.$store.commit('SET_LAYOUT', 'principal-layout')

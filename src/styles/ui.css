@@ -68,20 +68,28 @@ body {
 }
 
 #caja1 {
-  background: red;
-  height: 4rem;
+  background: greenyellow;
+  height: 3rem;
   width: 70px;
   text-align: center;
   color: white;
-  margin-left: 1290px;
-  position: absolute;
+  align-content: flex-end;
+  
+  
+  
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#caja1:hover {background-color: black}
+#caja1:hover {background-color: red}
+
 .caja0{
   display: flex;
     justify-content: center;
     align-items: center;
+    
+    
 }
 #app #mainNav {
   position: fixed;
@@ -253,9 +261,9 @@ body {
   background-color:green;
   color: black;
   z-index: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  
+
 }
 
 #app main #appHeader #logo {
@@ -275,6 +283,7 @@ body {
   padding: 0;
   background: none;
   color: black;
+  
 }
 
 #app main #appHeader > h1,
