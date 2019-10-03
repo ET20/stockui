@@ -2,45 +2,40 @@
 <div id="app">
     <!--Contenedor del menu lateral-->
     <nav id="mainNav" v-bind:class="[nav.show ? 'show' : 'hide']">
-       <!-- <div id="navBanner">
-             <img id="imagenfondo" src="../src/assets/ninja.jpg">
+        <!--<div id="navBanner">
+            <img id="imagenfondo" src="../src/fondo2.jpg">
             <router-link class to="/account" id="usuario">
                <img id="imagenperfil" src="../assets/logo.png" />
                 <h1>kecin</h1>
                 <h2>walter@tachuso.com</h2>
-            </router-link> -->
-        </div>
+            </router-link> 
+        </div>-->
         <ul class="list-unstyled">
             <li>
-                <router-link class to="/">
-                    <i class="optionIcon mdi mdi-home"></i>
-                    <span class="optionText">Inicio</span>
+                <router-link class to="/login">
+                    <i class="optionIcon mdi mdi-beaker"></i>
+                    <span class="optionText">Envases</span>
                 </router-link>
             </li>
             <li>
                 <router-link class to="/members">
-                    <i class="optionIcon mdi mdi-account"></i>
-                    <span class="optionText">Socios</span>
+                    <i class="optionIcon mdi mdi-wrench"></i>
+                    <span class="optionText">Herramientas</span>
                 </router-link>
             </li>
             <li>
                 <router-link class to="/fees">
-                    <i class="optionIcon mdi mdi-ticket-account"></i>
-                    <span class="optionText">Cuotas</span>
+                    <i class="optionIcon mdi mdi-food-apple"></i>
+                    <span class="optionText">Materia Prima</span>
                 </router-link>
             </li>
             <li>
                 <router-link class to="/newfee">
-                    <i class="optionIcon mdi mdi-ticket-account"></i>
-                    <span class="optionText">Generar Cuotas</span>
+                    <i class="optionIcon mdi mdi-cart"></i>
+                    <span class="optionText">Catalogo</span>
                 </router-link>
             </li>
-            <li>
-                <router-link class to="/newpay">
-                    <i class="optionIcon mdi mdi-ticket-account"></i>
-                    <span class="optionText">Registrar Pago</span>
-                </router-link>
-            </li>
+
         </ul>
     </nav>
     <transition name="fade" :duration="500">
@@ -52,9 +47,9 @@
     <main>
         <header id="appHeader" class="level">
             <div class="level-left">
-               <button id="hamburguer" class="button"  @click="toggleNav()">
-                   <b-icon icon="menu" size="is-medium">
-                        </b-icon>
+                <button id="hamburguer" class="button" @click="toggleNav()">
+                    <b-icon icon="menu" size="is-medium">
+                    </b-icon>
                 </button>
                 <!--<img id="logo" src="../assets/logo.png" />
                  <h1>Título S</h1>
@@ -67,7 +62,6 @@
 
             <div class="level-right">
                 <div id="caja1" class="caja0">
-
                     <b-button @click="clickMe" size="is-large">
                         <b-icon icon="account" size="is-medium">
                         </b-icon>
