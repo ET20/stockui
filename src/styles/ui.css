@@ -92,6 +92,15 @@ body {
     
     
 }
+
+#tabla2{
+  background-color: gray;
+  margin-left: 6px;
+  height: 2rem;
+  font-size: 20px;
+  color: #000;
+}
+
 #app #mainNav {
   position: absolute;
   

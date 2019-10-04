@@ -10,7 +10,8 @@
       <div id="caja0" class="caja0">
         <section>
           <b-button @click="clickMe">Clicask Me</b-button>
-        </section>
+        </section> 
+        
       </div>
     </div>
     <!--Contenedor principal donde cargan las páginas de la app-->
