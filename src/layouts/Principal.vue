@@ -1,8 +1,9 @@
 <template>
 <div id="app">
-    <!--Contenedor del menu lateral-->
+
     <nav id="mainNav" v-bind:class="[nav.show ? 'show' : 'hide']">
-        <!--<div id="navBanner">
+        <!--FOTO USUARIO
+            <div id="navBanner">
             <img id="imagenfondo" src="../src/fondo2.jpg">
             <router-link class to="/account" id="usuario">
                <img id="imagenperfil" src="../assets/logo.png" />
@@ -12,13 +13,13 @@
         </div>-->
         <ul class="list-unstyled">
             <li>
-                <router-link class to="/login">
+                <router-link class to="/envases">
                     <i class="optionIcon mdi mdi-beaker"></i>
                     <span class="optionText">Envases</span>
                 </router-link>
             </li>
             <li>
-                <router-link class to="/members">
+                <router-link class to="/herramientas">
                     <i class="optionIcon mdi mdi-wrench"></i>
                     <span class="optionText">Herramientas</span>
                 </router-link>
@@ -61,7 +62,19 @@
             </div>
 
             <div class="level-right">
+                <nav id="mainNav" v-bind:class="[nav.show ? 'show' : 'hide']">
+                    <ul class="list-unstyled">
+                        <li>
+                            <router-link class to="/login">
+                                <i class="optionIcon mdi mdi-beaker"></i>
+                                <span class="optionText">Envases</span>
+                            </router-link>
+                        </li>
+                    </ul>
+                </nav>
+
                 <div id="caja1" class="caja0">
+
                     <b-button @click="clickMe" size="is-large">
                         <b-icon icon="account" size="is-medium">
                         </b-icon>
@@ -98,7 +111,8 @@ export default {
     },
     methods: {
         clickMe() {
-            this.$router.push('login')
+           
+           this.$router.push('login')
             //this.$notification.open('Clicked!!')
         },
 
@@ -122,6 +136,7 @@ export default {
                     break;
             }
         },
+
         changeRoute: function () {
             // al cambiar de ruta se cierra la barra de navegación automáticamente
             const t = this

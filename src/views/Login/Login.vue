@@ -6,7 +6,7 @@
           <b-input value="johnsilver" maxlength="30"></b-input>
         </b-field>
 
-        <b-field label="Password">
+        <b-field label="Passwaaord">
           <b-input type="password" value="iwantmytreasure" password-reveal></b-input>
         </b-field>
 
