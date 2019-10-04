@@ -2,7 +2,7 @@
   <div id="HomeContainer" class="pageContainer">
    
    <!--  <div class="pageContentAbsolut">
-      Hola soy kevin!
+      Hola soy kevin! 
        <b-button @click="clickMe">boton</b-button>
     </div>-->
  <!--<img id="logo" src="img/fondo2.jpg" width="1500px" height="1000px" />-->

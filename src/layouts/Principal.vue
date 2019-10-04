@@ -18,7 +18,7 @@
                     <span class="optionText">Envases</span>
                 </router-link>
             </li>
-            <li>
+            <li> 
                 <router-link class to="/herramientas">
                     <i class="optionIcon mdi mdi-wrench"></i>
                     <span class="optionText">Herramientas</span>
