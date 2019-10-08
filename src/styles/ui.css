@@ -93,6 +93,10 @@ body {
     
 }
 
+#data{
+  background-color: #000;
+}
+
 #tabla2{
   background-color: gray;
   margin-left: 6px;
