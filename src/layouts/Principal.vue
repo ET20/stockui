@@ -10,6 +10,7 @@
                 <h1>kecin</h1>
                 <h2>walter@tachuso.com</h2>
             </router-link>  
+            holaaaaaaa
         </div>-->
         <ul class="list-unstyled">
             <li>
