@@ -9,7 +9,7 @@
                <img id="imagenperfil" src="../assets/logo.png" />
                 <h1>kecin</h1>
                 <h2>walter@tachuso.com</h2>
-            </router-link> 
+            </router-link>  
         </div>-->
         <ul class="list-unstyled">
             <li>
