@@ -42,6 +42,16 @@ body {
   font-size: 1.6rem;
 }
 
+.level{
+  background-color: #EE3210;
+  color: #000;
+  font-size: 25px;
+  
+  
+}
+
+
+
 #app {
   background: chocolate;
   height: 100%;

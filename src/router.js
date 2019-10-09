@@ -17,13 +17,22 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: ()=> import ("./views/Home/Home.vue")
     },
     {
       path: '/envases',
       name: 'envase',
-      component: envase
+      component: ()=> import ("./views/Envases/envase")
     },
+   
+    {
+      path: '/plus-envase',
+      name: 'plus-envase',
+      component: ()=> import ("./views/agregar-nuevo-envases/agregar-nuevo-envases.vue")
+    },
+    
+    
+    
     {
       path: '/members/all',
       name: 'ListMembers',
