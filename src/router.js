@@ -30,6 +30,11 @@ export default new Router({
       name: 'plus-envase',
       component: ()=> import ("./views/agregar-nuevo-envases/agregar-nuevo-envases.vue")
     },
+    {
+      path: '/plus-envase',
+      name: 'agregar-nuevo-envases',
+      component: ()=> import ("./views/agregar-nuevo-envases/agregar-nuevo-envases.vue")
+    },
     
     
     
