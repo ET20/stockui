@@ -6,15 +6,18 @@
     </div>
 
     <section class="container">
+        <div class="columns" >
+        <div class="column is-half is-offset-one-quarter" >
         <b-field label="Ingrese un material" class="inpute">
             <b-input maxlength="30"> </b-input>
         </b-field>
 
         <b-field label="Ingrese una descripcion" class="inpute">
 
-            <input type="number" step="2" maxlength="30"/>
-            
+            <b-input maxlength="30"></b-input>
         </b-field>
+
+        
 
         <b-field label="Ingrese cantidad" class="inpute">
             <b-input maxlength="30"></b-input>
@@ -29,9 +32,13 @@
             <b-input maxlength="30"></b-input>
         </b-field>
 
-        <b-field label="Ingrese precio" class="inpute">
-            <b-input maxlength="30"></b-input>
-        </b-field>
+        
+            <b-field label="Ingrese precio" class="inpute">
+                <b-input  type="number" step="2" ></b-input>
+            </b-field>
+        </div>
+        </div>
+
     </section>
 </div>
 </template>

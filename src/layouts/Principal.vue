@@ -12,14 +12,27 @@
             </router-link>  
             holaaaaaaa
         </div>-->
+        <div class="box-user">
+        <div id="navBanner">
+            <!--<img id="imagenfondo" src="/img/fondo.jpg">-->
+            <router-link class to="/account" id="usuario">
+               <img id="imagenperfil" src="/img/user.png" />
+                <h1>Kevin Olguin</h1>
+                <h2>kevinsolguin@sanluis.edu.ar</h2>
+            </router-link>  
+           
+        </div>
+        </div>
+        <div class="box-list">
         <ul class="list-unstyled">
+
             <li>
                 <router-link class to="/envases">
                     <i class="optionIcon mdi mdi-beaker"></i>
                     <span class="optionText">Envases</span>
                 </router-link>
             </li>
-            <li> 
+            <li>
                 <router-link class to="/herramientas">
                     <i class="optionIcon mdi mdi-wrench"></i>
                     <span class="optionText">Herramientas</span>
@@ -39,6 +52,7 @@
             </li>
 
         </ul>
+        </div>
     </nav>
     <transition name="fade" :duration="500">
         <div v-if="nav.show" id="navOverlay" @click="toggleNav(false)"></div>
@@ -53,13 +67,7 @@
                     <b-icon icon="menu" size="is-medium">
                     </b-icon>
                 </button>
-                <!--<img id="logo" src="../assets/logo.png" />
-                 <h1>Título S</h1>
-                <i class="chevron mdi mdi-chevron-right"></i>
-                <h2>
-                    <i class="mdi mdi-user"></i>
-                    Título 2
-                </h2>-->
+
             </div>
 
             <div class="level-right">
@@ -74,6 +82,7 @@
                     </ul>
                 </nav>
 
+                <!--//BOTON Y LOGO DE LOGIN 
                 <div id="caja1" class="caja0">
 
                     <b-button @click="clickMe" size="is-large">
@@ -82,10 +91,8 @@
 
                     </b-button>
 
-                </div>
+                </div>-->
             </div>
-
-            <!-- <img id="lineas" src="img/lineas.png">-->
 
         </header>
 
@@ -112,8 +119,8 @@ export default {
     },
     methods: {
         clickMe() {
-           
-           this.$router.push('login')
+
+            this.$router.push('login')
             //this.$notification.open('Clicked!!')
         },
 

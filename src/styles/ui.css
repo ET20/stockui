@@ -50,6 +50,17 @@ body {
   
 }
 
+.list-unstyled{
+  margin-top: 80px;
+}
+.box-user{
+  margin-top:20px;
+}
+.box-list{
+  
+  margin-top:240px; 
+}
+
 .pageContainer{
   overflow: auto;
 }
@@ -70,6 +81,8 @@ body {
 
 }
 
+
+
 .envasehome{
   overflow: auto;
   width: 100%;
@@ -77,46 +90,13 @@ body {
   position: absolute;
 }
 props
-#caja0 {
-  background: blue;
-  height: 4rem;
-  width: 70px;
-  text-align: center;
-  color: white;
-  
-}
 
-#caja1 {
-  background: brown;
-  height: 3rem;
-  width: 70px;
-  text-align: center;
-  color: white;
-  align-content: flex-end;
-  
-  
-  
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#caja1:hover {background-color: grey}
 
-.caja0{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-    
-}
+
 
 #data{
   background-color: #000;
 }
-
-
 
 
 #app #mainNav {
@@ -190,6 +170,8 @@ props
   width: 100%;
   text-decoration: none;
   outline: none;
+  
+  
 }
 
 #app #mainNav #navBanner #usuario > #imagenperfil {
@@ -205,16 +187,19 @@ props
   position: relative;
   color: #000;
   margin: 0;
+  font-size: 20px;
 }
 
 #app #mainNav #navBanner #usuario > h1 {
-  font-size: 1rem;
+  
   font-weight: 600;
+  font-size: 20px;
 }
 
 #app #mainNav #navBanner #usuario > h2 {
-  font-size: 0.7rem;
+ 
   font-weight: 400;
+  font-size: 15px;
 }
 
 #app #mainNav ul {
