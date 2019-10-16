@@ -50,6 +50,26 @@ body {
   
 }
 
+.notify{
+  background-color:#99A3A4;
+  width: 500px;
+  height: 200px;
+ position: absolute;
+ margin-left: 500px;
+ margin-top: 200px;
+ border-radius: 16px;
+ text-align: center;
+ font-size: 20px;
+ padding-top:50px ;
+ color: black;
+ 
+}
+
+.cerrar{
+  
+width: 100%;
+}
+
 .list-unstyled{
   margin-top: 80px;
 }
@@ -58,7 +78,7 @@ body {
 }
 .box-list{
   
-  margin-top:240px; 
+  margin-top:150px; 
 }
 
 .pageContainer{
@@ -89,8 +109,6 @@ body {
   height: 100%;
   position: absolute;
 }
-props
-
 
 
 

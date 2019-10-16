@@ -13,7 +13,7 @@ Envases
                 </b-input>
 
                 <b-button class="botonsearch" type="is-danger" icon-right="plus" rounded="true" @click="clickMe" />
-                <b-button class="botonsearch2" type="is-danger" icon-right="printer" rounded="true" @click="clickMe" 
+                <b-button class="botonsearch2" type="is-danger" icon-right="printer" rounded="true" @click="imprimir" 
                  />
             </b-field>
         </div>
@@ -28,8 +28,8 @@ Envases
 
     <b-table :data="envasefiltrado">
 
-        <template slot-scope="props">
-            <b-table-column field="idmember" label="ID" width="40" numeric>
+        <template slot-scope="props" class="props">
+            <b-table-column field="idmember" label="ID"  width="40" numeric >
                 {{ props.row.idmember}}
             </b-table-column>
 
