@@ -51,7 +51,7 @@ body {
 }
 
 .notify{
-  background-color:#99A3A4;
+  background-color:#18ACDB;
   width: 500px;
   height: 200px;
  position: absolute;
@@ -61,7 +61,8 @@ body {
  text-align: center;
  font-size: 20px;
  padding-top:50px ;
- color: black;
+ color: white;
+ opacity: 1;
  
 }
 
@@ -101,7 +102,15 @@ width: 100%;
 
 }
 
+.botonno{
+  margin-top: 50px;
+  
+}
+.botonsi{
+  margin-top: 50px;
+  
 
+}
 
 .envasehome{
   overflow: auto;

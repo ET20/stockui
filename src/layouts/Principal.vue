@@ -55,7 +55,7 @@
 
                     <li>
 
-                        <button class="cerrar button block optionIcon mdi mdi-exit-to-app"  @click="isActive = !isActive">Cerrar sesión</button>
+                        <button class="cerrar button block optionIcon mdi mdi-exit-to-app" @click="close()">Cerrar sesión</button>
 
                     </li>
 
@@ -104,12 +104,26 @@
 
             </header>
             <div class="notify" v-if="isActive" @click="toggle(false)" aria-close-label="Close notification">
-               ¿Seguro que quiere salir?
-            <button class="botonno"  @click="isActive = !isActive">No</button>
-            <div class="botonsi">
+                ¿Seguro que quiere salir?
+                <div class="columns">
+                    <div class="column">
+                        <div class="botonno" size="is-large">
+                            <b-button @click="isActive = !isActive" type="is-info" >NO
+                                <b-icon icon="close-box-outline" size="is-small">
+                                </b-icon>
+                            </b-button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="botonsi" size="is-large">
+                            <b-button @click="clickMe" type="is-info">
+                                SI <b-icon icon="exit-to-app" size="is-small">
+                                </b-icon>
 
+                            </b-button>
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
             <transition name="fade">
@@ -143,6 +157,10 @@ export default {
 
             this.$router.push('login')
             //this.$notification.open('Clicked!!')
+        },
+        close() {
+            this.toggleNav(false)
+            this.isActive = !this.isActive
         },
 
         setTitle: function (data) {

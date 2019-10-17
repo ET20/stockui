@@ -12,8 +12,8 @@ Envases
                 <b-input placeholder="Search..." type="search" icon="magnify" v-model="buscar">
                 </b-input>
 
-                <b-button class="botonsearch" type="is-danger" icon-right="plus" rounded="true" @click="clickMe" />
-                <b-button class="botonsearch2" type="is-danger" icon-right="printer" rounded="true" @click="imprimir" 
+                <b-button class="botonsearch" type="is-danger" icon-right="plus" :rounded="true" @click="clickMe" />
+                <b-button class="botonsearch2" type="is-danger" icon-right="printer" :rounded="true" @click="imprimir" 
                  />
             </b-field>
         </div>
@@ -67,8 +67,8 @@ Envases
         </b-table-column>-->
 
             <b-table-column field="" label="" centered class="has-text-right">
-                <b-button type="is-danger" icon-right="delete" rounded="true"/>
-                <b-button type="is-danger" icon-right="pencil" rounded="true" />
+                <b-button type="is-danger" icon-right="delete" :rounded="true"/>
+                <b-button type="is-danger" icon-right="pencil" :rounded="true" />
             </b-table-column>
         </template>
     </b-table>
@@ -106,6 +106,10 @@ export default {
            
            this.$router.push('plus-envase')
             //this.$notification.open('Clicked!!')
+        },
+
+        imprimir(){
+
         },
         
         toggleNav: function () {
