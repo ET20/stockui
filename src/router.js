@@ -31,10 +31,16 @@ export default new Router({
       component: ()=> import ("./views/agregar-nuevo-envases/agregar-nuevo-envases.vue")
     },
     {
-      path: '/plus-envase',
-      name: 'agregar-nuevo-envases',
-      component: ()=> import ("./views/agregar-nuevo-envases/agregar-nuevo-envases.vue")
+      path: '/plus-catalogo',
+      name: 'plus-catalogo',
+      component: ()=> import ("./views/agregar-nuevo-catalogo/agregar-nuevo-catalogo.vue")
     },
+    {
+      path: '/Catalogo',
+      name: 'catalogo',
+      component: ()=> import ("./views/Catalogo/catalogo.vue")
+    },
+    
     
     
     

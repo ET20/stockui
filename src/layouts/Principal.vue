@@ -1,5 +1,5 @@
 <template>
-<section>
+
     <div id="app">
 
         <nav id="mainNav" v-bind:class="[nav.show ? 'show' : 'hide']">
@@ -47,7 +47,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link class to="/newfee">
+                        <router-link class to="/catalogo">
                             <i class="optionIcon mdi mdi-cart"></i>
                             <span class="optionText">Catalogo</span>
                         </router-link>
@@ -132,7 +132,7 @@
         </main>
     </div>
 
-</section>
+
 </template>
 
 <script>

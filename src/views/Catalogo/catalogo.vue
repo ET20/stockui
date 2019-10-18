@@ -2,7 +2,7 @@
 <div id="HomeContainer" class="pageContainer">
 <div class="envasehome">
     <div class="level is-marginless" >
-Envases
+Catalogo
         <div class="level-left">
             
         </div>
@@ -15,7 +15,6 @@ Envases
                 <b-button class="botonsearch" type="is-danger" icon-right="plus" :rounded="true" @click="clickMe" />
                 <b-button class="botonsearch2" type="is-danger" icon-right="printer" :rounded="true" @click="imprimir" 
                  />
-
             </b-field>
         </div>
 
@@ -30,19 +29,19 @@ Envases
     <b-table :data="envasefiltrado">
 
         <template slot-scope="props" class="props">
-            <b-table-column field="idmember" label="ID"  width="40" numeric >
+            <b-table-column field="idproduccion" label="ID"  width="40" numeric >
                 {{ props.row.idmember}}
             </b-table-column>
 
-            <b-table-column field="lastname" label="material">
+            <b-table-column field="nombre" label="material">
                 {{ props.row.lastname }}
             </b-table-column>
 
-            <b-table-column field="dni" label="Descripción">
+            <b-table-column field="lote" label="Descripción">
                 {{ props.row.dni }}
             </b-table-column>
 
-            <b-table-column field="gender.gendername" label="Cantidad">
+            <b-table-column field="cantidad" label="Cantidad">
                 {{ props.row.gender.gendername }}
             </b-table-column>
 
@@ -91,17 +90,13 @@ export default {
 
         }
     },
-    
 
     computed: {
         envasefiltrado() {
             return this.envases.filter(
                 en => {
                     return en.lastname.toLowerCase().includes(this.buscar.toLowerCase())
-                
                 }
-                
-                
             )
         }
     },
@@ -109,7 +104,7 @@ export default {
     methods: {
          clickMe() {
            
-           this.$router.push('plus-envase')
+           this.$router.push('plus-catalogo')
             //this.$notification.open('Clicked!!')
         },
 
@@ -122,7 +117,8 @@ export default {
         },
         getenvases() {
             //http://et20-stockapi.herokuapp.com/public/container
-            axios.get("http://newberygestionapi.herokuapp.com/public/members")
+            
+            axios.get("http://et20-stockapi.herokuapp.com/public/productions")
                 .then(({
                     data
                 }) => {
@@ -142,5 +138,5 @@ export default {
 </script>
 
 <style scoped>
-@import "envases.min.css";
+@import "catalogo.min.css";
 </style>

@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,UAAU,EAAE,IAAI;CACjB",
     "sources": [
-        "envases.scss"
+        "catalogo.scss"
     ],
     "names": [],
-    "file": "envases.css"
+    "file": "catalogo.css"
 }
