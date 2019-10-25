@@ -1,26 +1,22 @@
 <template>
   <div id="app">
-    <div id="barra" class="columns">
-      <div id="caja1" class="caja0">
-        <!--<img id="lineas" src="img/lineas.png">-->
-        <b-icon icon="menu" size="is-medium"></b-icon>
-      </div>
-      
-
-      <div id="caja0" class="caja0">
-        <section>
-          <b-button @click="clickMe">Clicask Me</b-button>
-        </section> 
-        
-      </div>
+    
+    <div id="titulo">
+    CONTROL DE STOCK
     </div>
-    <!--Contenedor principal donde cargan las páginas de la app-->
+     
+    
+    
+    
+    
 
     <main>
       <transition name="fade">
         <router-view></router-view>
       </transition>
     </main>
+
+  
   </div>
 </template>
 

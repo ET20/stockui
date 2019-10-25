@@ -125,6 +125,9 @@ width: 100%;
   background-color: #000;
 }
 
+#titulo{
+  text-align: center;
+}
 
 #app #mainNav {
   position: absolute;
