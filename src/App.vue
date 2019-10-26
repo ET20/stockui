@@ -1,7 +1,7 @@
 <template>
   <component :is="layout"></component>
 </template>
-
+  
 <script>
 import LoginLayout from './layouts/Login';
 import PrincipalLayout from './layouts/Principal';
