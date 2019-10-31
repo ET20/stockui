@@ -4,12 +4,7 @@
     <div id="titulo">
     CONTROL DE STOCK
     </div>
-     
-    
-    
-    
-    
-
+  
     <main>
       <transition name="fade">
         <router-view></router-view>

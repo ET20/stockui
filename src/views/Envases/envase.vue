@@ -45,6 +45,12 @@ Envases
             <b-table-column field="gender.gendername" label="Cantidad">
                 {{ props.row.gender.gendername }}
             </b-table-column>
+            <b-table-column field="gender.gendername" label="Capacidad">
+                {{ props.row.gender.gendername }}
+            </b-table-column>
+            <b-table-column field="gender.gendername" label="Unidad">
+                {{ props.row.gender.gendername }}
+            </b-table-column>
 
             <!-- <b-table-column field="capa" label="Capacidad">
                     {{ props.row.capa }}
@@ -122,6 +128,7 @@ export default {
         },
         getenvases() {
             //http://et20-stockapi.herokuapp.com/public/container
+           // http://newberygestionapi.herokuapp.com/public/members
             axios.get("http://newberygestionapi.herokuapp.com/public/members")
                 .then(({
                     data

@@ -2,7 +2,7 @@
 <div id="HomeContainer" class="pageContainer">
 <div class="envasehome">
     <div class="level is-marginless" >
-Catalogo
+Materia Prima
         <div class="level-left">
             
         </div>
@@ -144,5 +144,5 @@ export default {
 </script>
 
 <style scoped>
-@import "catalogo.min.css";
+@import "materia.min.css";
 </style>

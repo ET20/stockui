@@ -1,7 +1,7 @@
 <template>
 <div id="LoginContainer" class="pageContainer">
     <div class="pageContentAbsolut">
-
+<img src="/img/wall.jpg" class="wall-login">
         <section class="container">
             <div class="columns">
                 <div class="column is-half is-offset-one-quarter">
@@ -17,7 +17,7 @@
 
         </section>
 
-        </section>
+        
     </div>
 </div>
 </template>

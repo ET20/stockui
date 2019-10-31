@@ -2,6 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home/Home.vue'
 import envase from "./views/Envases/envase.vue"
+import catalogo from "./views/Catalogo/catalogo.vue"
+import materia from "./views/materia-prima/materia.vue"
+
 
 Vue.use(Router) 
 
@@ -22,9 +25,16 @@ export default new Router({
     {
       path: '/envases',
       name: 'envase',
-      component: ()=> import ("./views/Envases/envase")
+      component: ()=> import ("./views/Envases/envase.vue")
     },
    
+    {
+      path: '/materia-prima',
+      name: 'materia',
+      component: ()=> import ("./views/materia-prima/materia.vue")
+    },
+
+
     {
       path: '/plus-envase',
       name: 'plus-envase',
