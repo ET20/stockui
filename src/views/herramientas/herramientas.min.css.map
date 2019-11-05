@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,AAAC,CACb,UAAU,CAAE,IAAI,CACjB",
+    "sources": [
+        "herramientas.scss"
+    ],
+    "names": [],
+    "file": "herramientas.min.css"
+}

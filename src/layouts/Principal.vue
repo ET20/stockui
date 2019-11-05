@@ -41,7 +41,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link class to="/fees">
+                        <router-link class to="/materia-prima">
                             <i class="optionIcon mdi mdi-food-apple"></i>
                             <span class="optionText">Materia Prima</span>
                         </router-link>

@@ -1,58 +1,57 @@
 <template>
 <div id="HomeContainer" class="pageContainer">
-<div class="envasehome">
-    <div class="level is-marginless" >
-Envases
-        <div class="level-left">
-            
+    <div class="envasehome">
+        <div class="level is-marginless">
+            Envases
+            <div class="level-left">
+
+            </div>
+            <div class="level-right">
+                <b-field grouped>
+
+                    <b-input placeholder="Search..." type="search" icon="magnify" v-model="buscar">
+                    </b-input>
+
+                    <b-button class="botonsearch" type="is-danger" icon-right="plus" :rounded="true" @click="clickMe" />
+                    <b-button class="botonsearch2" type="is-danger" icon-right="printer" :rounded="true" @click="imprimir" />
+
+                </b-field>
+            </div>
+
         </div>
-        <div class="level-right">
-            <b-field grouped>
 
-                <b-input placeholder="Search..." type="search" icon="magnify" v-model="buscar">
-                </b-input>
-
-                <b-button class="botonsearch" type="is-danger" icon-right="plus" :rounded="true" @click="clickMe" />
-                <b-button class="botonsearch2" type="is-danger" icon-right="printer" :rounded="true" @click="imprimir" 
-                 />
-
-            </b-field>
-        </div>
-
-    </div>
-
-    <!--  <div class="pageContentAbsolut">
+        <!--  <div class="pageContentAbsolut">
       Hola soy kevin! 
        <b-button @click="clickMe">boton</b-button>
     </div>-->
-    <!--<img id="logo" src="img/fondo2.jpg" width="1500px" height="1000px" />-->
+        <!--<img id="logo" src="img/fondo2.jpg" width="1500px" height="1000px" />-->
 
-    <b-table :data="envasefiltrado">
+        <b-table :data="envasefiltrado">
 
-        <template slot-scope="props" class="props">
-            <b-table-column field="idmember" label="ID"  width="40" numeric >
-                {{ props.row.idmember}}
-            </b-table-column>
+            <template slot-scope="props" class="props">
+                <b-table-column field="idmember" label="ID" width="40" numeric>
+                    {{ props.row.idmember}}
+                </b-table-column>
 
-            <b-table-column field="lastname" label="material">
-                {{ props.row.lastname }}
-            </b-table-column>
+                <b-table-column field="lastname" label="material">
+                    {{ props.row.lastname }}
+                </b-table-column>
 
-            <b-table-column field="dni" label="Descripción">
-                {{ props.row.dni }}
-            </b-table-column>
+                <b-table-column field="dni" label="Descripción">
+                    {{ props.row.dni }}
+                </b-table-column>
 
-            <b-table-column field="gender.gendername" label="Cantidad">
-                {{ props.row.gender.gendername }}
-            </b-table-column>
-            <b-table-column field="gender.gendername" label="Capacidad">
-                {{ props.row.gender.gendername }}
-            </b-table-column>
-            <b-table-column field="gender.gendername" label="Unidad">
-                {{ props.row.gender.gendername }}
-            </b-table-column>
+                <b-table-column field="gender.gendername" label="Cantidad">
+                    {{ props.row.gender.gendername }}
+                </b-table-column>
+                <b-table-column field="gender.gendername" label="Capacidad">
+                    {{ props.row.gender.gendername }}
+                </b-table-column>
+                <b-table-column field="gender.gendername" label="Unidad">
+                    {{ props.row.gender.gendername }}
+                </b-table-column>
 
-            <!-- <b-table-column field="capa" label="Capacidad">
+                <!-- <b-table-column field="capa" label="Capacidad">
                     {{ props.row.capa }}
                 </b-table-column>
 
@@ -64,7 +63,7 @@ Envases
                     {{ props.row.prec }}
                 </b-table-column>-->
 
-            <!--TABLA FEMENINO Y MASCULINO
+                <!--TABLA FEMENINO Y MASCULINO
             <b-table-column label="Precio">
             <span>
                 <b-icon pack="fas" :icon="props.row.gender === 'Male' ? 'mars' : 'venus'">
@@ -72,15 +71,16 @@ Envases
                 {{ props.row.gender }}
             </span>
         </b-table-column>-->
+                <b-table-column label>
+                    <router-link :to="`/agregar-nuevo-catalogo/${props.row.idmember}`">
+                        <b-icon icon="chevron-right" size="is-medium"></b-icon>
+                    </router-link>
 
-            <b-table-column field="" label="" centered class="has-text-right">
-                <b-button type="is-danger" icon-right="delete" :rounded="true"/>
-                <b-button type="is-danger" icon-right="pencil" :rounded="true" />
-            </b-table-column>
-        </template>
-    </b-table>
+                </b-table-column>
+            </template>
+        </b-table>
 
-</div>
+    </div>
 </div>
 </template>
 
@@ -97,38 +97,36 @@ export default {
 
         }
     },
-    
 
     computed: {
         envasefiltrado() {
             return this.envases.filter(
                 en => {
                     return en.lastname.toLowerCase().includes(this.buscar.toLowerCase())
-                
+
                 }
-                
-                
+
             )
         }
     },
 
     methods: {
-         clickMe() {
-           
-           this.$router.push('plus-envase')
+        clickMe() {
+
+            this.$router.push('plus-envase')
             //this.$notification.open('Clicked!!')
         },
 
-        imprimir(){
+        imprimir() {
 
         },
-        
+
         toggleNav: function () {
             this.$emit('toggleNav')
         },
         getenvases() {
             //http://et20-stockapi.herokuapp.com/public/container
-           // http://newberygestionapi.herokuapp.com/public/members
+            // http://newberygestionapi.herokuapp.com/public/members
             axios.get("http://newberygestionapi.herokuapp.com/public/members")
                 .then(({
                     data
