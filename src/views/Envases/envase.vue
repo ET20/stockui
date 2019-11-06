@@ -72,7 +72,7 @@
             </span>
         </b-table-column>-->
                 <b-table-column label>
-                    <router-link :to="`/agregar-nuevo-catalogo/${props.row.idmember}`">
+                    <router-link :to="`/agregarcatalogo/${props.row.idmember}`">
                         <b-icon icon="chevron-right" size="is-medium"></b-icon>
                     </router-link>
 

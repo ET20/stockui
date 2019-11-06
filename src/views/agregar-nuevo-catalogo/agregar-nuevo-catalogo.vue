@@ -46,15 +46,34 @@
 <script>
 export default {
     components: {},
-    // data: function() {},
+    data: function() {
+        envases:false
+    },
     methods: {
         toggleNav: function () {
             this.$emit('toggleNav')
         },
 
+         getsocio() {
+            //http://et20-stockapi.herokuapp.com/public/container
+            this.cargando = true
+            axios.get("http://newberygestionapi.herokuapp.com/public/members/" + this.$route.params.id )
+                .then(({
+                    data
+                }) => {
+                    this.envases = data.result
+                    
+                })
+                .catch(error => {
+                    this.envases = false
+                })
+               
+        },
+
     },
     created() {
         this.$store.commit('SET_LAYOUT', 'principal-layout')
+        this.getsocio()
     }
 }
 </script>

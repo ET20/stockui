@@ -4,7 +4,8 @@ import Home from './views/Home/Home.vue'
 import envase from "./views/Envases/envase.vue"
 import catalogo from "./views/Catalogo/catalogo.vue"
 import materia from "./views/materia-prima/materia.vue"
-import herramientas from"./views/herramientas/herramientas.vue"
+import herramientas from "./views/herramientas/herramientas.vue"
+import agregarcatalogo from "./views/agregar-nuevo-catalogo/agregar-nuevo-catalogo.vue"
 
 
 Vue.use(Router) 
@@ -42,8 +43,8 @@ export default new Router({
       component: ()=> import ("./views/agregar-nuevo-envases/agregar-nuevo-envases.vue")
     },
     {
-      path: '/plus-catalogo',
-      name: 'plus-catalogo',
+      path: '/agregarcatalogo/:id',
+      name: 'agregarcatalogo',
       component: ()=> import ("./views/agregar-nuevo-catalogo/agregar-nuevo-catalogo.vue")
     },
     {
