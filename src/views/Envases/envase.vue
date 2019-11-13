@@ -51,28 +51,9 @@
                     {{ props.row.gender.gendername }}
                 </b-table-column>
 
-                <!-- <b-table-column field="capa" label="Capacidad">
-                    {{ props.row.capa }}
-                </b-table-column>
-
-                <b-table-column field="uni" label="Unidad">
-                    {{ props.row.uni }}
-                </b-table-column>
-
-                <b-table-column field="prec" label="Precio">
-                    {{ props.row.prec }}
-                </b-table-column>-->
-
-                <!--TABLA FEMENINO Y MASCULINO
-            <b-table-column label="Precio">
-            <span>
-                <b-icon pack="fas" :icon="props.row.gender === 'Male' ? 'mars' : 'venus'">
-                </b-icon>
-                {{ props.row.gender }}
-            </span>
-        </b-table-column>-->
+                
                 <b-table-column label>
-                    <router-link :to="`/agregarcatalogo/${props.row.idmember}`">
+                    <router-link :to="`/editarcatalogo/${props.row.idmember}`">
                         <b-icon icon="chevron-right" size="is-medium"></b-icon>
                     </router-link>
 

@@ -12,8 +12,8 @@ Catalogo
                 <b-input placeholder="Search..." type="search" icon="magnify" v-model="buscar">
                 </b-input>
 
-                <b-button class="botonsearch" type="is-danger" icon-right="plus" :rounded="true" @click="clickMe" />
-                <b-button class="botonsearch2" type="is-danger" icon-right="printer" :rounded="true" @click="imprimir" 
+                <b-button class="botonse"   icon-right="plus" :rounded="true" @click="clickMe" />
+                <b-button class="botonse"   icon-right="printer" :rounded="true" @click="imprimir" 
                  />
             </b-field>
         </div>
@@ -71,11 +71,13 @@ Catalogo
                 {{ props.row.gender }}
             </span>
         </b-table-column>-->
+<b-table-column label>
+                    <router-link :to="`/editarcatalogo/${props.row.idmember}`">
+                        <b-icon icon="chevron-right" size="is-medium"></b-icon>
+                    </router-link>
 
-            <b-table-column field="" label="" centered class="has-text-right">
-                <b-button type="is-danger" icon-right="delete" :rounded="true"/>
-                <b-button type="is-danger" icon-right="pencil" :rounded="true" />
-            </b-table-column>
+                </b-table-column>
+            
         </template>
     </b-table>
 

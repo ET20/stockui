@@ -8,8 +8,8 @@
     <section class="container">
         <div class="columns" >
         <div class="column is-half is-offset-one-quarter" >
-        <b-field label="Ingrese un material" class="inpute">
-            <b-input maxlength="30"> </b-input>
+        <b-field label="Ingrese un material" class="inpute" >
+            <b-input maxlength="30" v-model="envases.firstname" > </b-input>
         </b-field>
 
         <b-field label="Ingrese una descripcion" class="inpute">
@@ -44,11 +44,15 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
     components: {},
-    data: function() {
-        envases:false
+    data() {
+        return {
+            envases:false
+        }
     },
+   
     methods: {
         toggleNav: function () {
             this.$emit('toggleNav')

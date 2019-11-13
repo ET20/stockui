@@ -43,7 +43,12 @@ export default new Router({
       component: ()=> import ("./views/agregar-nuevo-envases/agregar-nuevo-envases.vue")
     },
     {
-      path: '/agregarcatalogo/:id',
+      path: '/editarcatalogo/:id',
+      name: 'editarcatalogo',
+      component: ()=> import ("./views/agregar-nuevo-catalogo/agregar-nuevo-catalogo.vue")
+    },
+    {
+      path: '/agregarcatalogo',
       name: 'agregarcatalogo',
       component: ()=> import ("./views/agregar-nuevo-catalogo/agregar-nuevo-catalogo.vue")
     },

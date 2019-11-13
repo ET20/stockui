@@ -1,7 +1,7 @@
 <template>
   <div id="HomeContainer" class="pageContainerh">
    
- <img id="logo" src="img/fondo2.jpg" width=%100 height=%100 />
+ <img id="logo" src="img/wall.jpg" width=%100 height=%100 />
   </div>
 </template>
 

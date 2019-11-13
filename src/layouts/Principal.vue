@@ -3,16 +3,7 @@
     <div id="app">
 
         <nav id="mainNav" v-bind:class="[nav.show ? 'show' : 'hide']">
-            <!--FOTO USUARIO
-            <div id="navBanner">
-            <img id="imagenfondo" src="../src/fondo2.jpg">
-            <router-link class to="/account" id="usuario">
-               <img id="imagenperfil" src="../assets/logo.png" />
-                <h1>kecin</h1>
-                <h2>walter@tachuso.com</h2>
-            </router-link>  
-            holaaaaaaa
-        </div>-->
+           
             <div class="box-user">
                 <div id="navBanner">
                     <!--<img id="imagenfondo" src="/img/fondo.jpg">-->
